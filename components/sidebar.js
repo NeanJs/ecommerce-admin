@@ -1,9 +1,9 @@
 import { ICONS } from "@/assets/icons";
+import { activeLink } from "@/constants/custom.styles";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Sidebar() {
-  const activeLink = "bg-prime text-white gap-4";
   const LINKS = [
     {
       title: "Dashboard",
@@ -11,7 +11,7 @@ export default function Sidebar() {
       path: "/dashboard",
     },
     {
-      title: "Products",
+    title: "Products",
       icon: ICONS.products,
       path: "/products",
     },

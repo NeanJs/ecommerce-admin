@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.form-fields input, textarea, select{
+  @apply border-gray-300 border-2 rounded-md p-2 resize-y
+}
