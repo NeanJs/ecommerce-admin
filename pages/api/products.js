@@ -1,3 +1,16 @@
-export default function handle(req,res){
-    res.status(200).json({name:"product"})
+import { mongooseConnect } from "@/lib/mongoose";
+import Product from "@/models/Product";
+
+export default async function handle(req, res) {
+  const { method } = req;
+  await mongooseConnect();
+  if (method == "POST") {
+    const { title, description, price } = req.body;
+    const productBody = await Product.create({
+      title,
+      description,
+      price,
+    });
+    res.json(productBody);
+  }
 }

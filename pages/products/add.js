@@ -7,7 +7,7 @@ export default function NewProduct() {
     name: "",
     description: "",
     price: 0,
-    category: "",
+    // category: "",
   };
   const TextArea = ({ field, form, ...props }) => (
     <textarea {...field} {...props} />
@@ -24,10 +24,10 @@ export default function NewProduct() {
         >
           <Form className="form-fields flex flex-col gap-4">
             <Field name="name" type="text" placeholder="Product Name" />
-            <Field name="category" as="select">
+            {/* <Field name="category" as="select">
               <option value={1}>1</option>
               <option value={2}>2</option>
-            </Field>
+            </Field> */}
             <Field
               name="description"
               type="text"
