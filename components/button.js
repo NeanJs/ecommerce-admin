@@ -11,7 +11,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`ease duration-300 flex flex-row items-center px-4 py-2 border-2 border-prime text-center w-fit rounded-full ${
+      className={`ease duration-300 flex flex-row items-center px-4 py-2 border-2 border-prime text-center w-fit rounded-full ${className} ${
         primary ? "border-prime text-prime hover:bg-prime hover:text-white" : "bg-prime text-white hover:text-prime hover:bg-transparent hover:border-prime"
       }`}
     >
