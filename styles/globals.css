@@ -26,6 +26,47 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.form-fields input, textarea, select{
-  @apply border-gray-300 border-2 rounded-md p-2 resize-y
+.form-fields input,
+textarea,
+select {
+  @apply border-gray-300 border-2 rounded-md p-2 resize-y;
+}
+
+table.products {
+  @apply w-full;
+}
+.products thead tr td {
+  @apply bg-blue-100 p-1;
+}
+table.products tr td {
+  @apply border p-1;
+}
+table.products a {
+  @apply w-full border-transparent ease-linear border-2 hover:bg-transparent duration-300 text-center text-white p-2 rounded-md mx-2 cursor-pointer inline-flex items-center gap-1;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #57C5B6;
+  border-color: #57C5B6 transparent #57C5B6 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

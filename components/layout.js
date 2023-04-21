@@ -1,7 +1,7 @@
 import Sidebar from "@/components/sidebar";
 import { useSession, signIn, signOut } from "next-auth/react";
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   const { data: session } = useSession();
   if (!session) {
     return (
@@ -18,7 +18,9 @@ export default function Layout({children}) {
   return (
     <div className="bg-light min-h-screen text-black flex items-start">
       <Sidebar />
-      <div className="flex bg-white flex-grow my-2 mr-2 rounded-lg p-2 h-screen"> {children}</div>
+      <div className="flex flex-col bg-white flex-grow my-2 mr-2 rounded-lg p-2 h-screen">
+        {children}
+      </div>
     </div>
   );
 }
