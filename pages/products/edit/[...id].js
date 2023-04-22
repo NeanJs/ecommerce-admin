@@ -21,7 +21,7 @@ export default function Edit() {
 
   return (
     <Layout>
-      <span>Edit Product</span>
+      <span className="text-xl mb-2 font-semibold">Edit Product</span>
       {product ? <ProductForm product={product} /> : <Loader />}
     </Layout>
   );

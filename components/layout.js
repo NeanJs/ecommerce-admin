@@ -1,5 +1,6 @@
 import Sidebar from "@/components/sidebar";
 import { useSession, signIn, signOut } from "next-auth/react";
+import Button from "./button";
 
 export default function Layout({ children }) {
   const { data: session } = useSession();

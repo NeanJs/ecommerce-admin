@@ -38,11 +38,14 @@ table.products {
 .products thead tr td {
   @apply bg-blue-100 p-1;
 }
-table.products tr td {
-  @apply border p-1;
+table.products tbody tr td {
+  @apply border p-1 ;
 }
 table.products a {
-  @apply w-full border-transparent ease-linear border-2 hover:bg-transparent duration-300 text-center text-white p-2 rounded-md mx-2 cursor-pointer inline-flex items-center gap-1;
+  @apply w-fit border-transparent ease-linear border-2 hover:bg-transparent duration-300 text-center text-white p-2 rounded-md mx-2 cursor-pointer inline-flex items-center gap-1;
+}
+.form-fields label{
+  @apply text-gray-500
 }
 
 .lds-dual-ring {
@@ -70,3 +73,4 @@ table.products a {
     transform: rotate(360deg);
   }
 }
+
